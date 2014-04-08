@@ -36,6 +36,8 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\SitefinityWebApp\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <!-- This property group is only here to support building this project using the 
        MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
@@ -77,11 +79,11 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Windows.Browser" />
-    <Reference Include="Telerik.Windows.Controls, Version=2013.1.403.1050, Culture=neutral, PublicKeyToken=5803cfa389c90ce7">
-      <HintPath>C:\Users\dabour\AppData\Local\Telerik.Sitefinity.SDK\Dependencies\Silverlight\Telerik.Windows.Controls.dll</HintPath>
+    <Reference Include="Telerik.Windows.Controls">
+      <HintPath>..\SitefinityWebApp\packages\Telerik.Sitefinity.SDK.Silverlight.2013.1.403.1050\lib\Telerik.Windows.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Windows.Controls.Navigation, Version=2013.1.403.1050, Culture=neutral, PublicKeyToken=5803cfa389c90ce7">
-      <HintPath>C:\Users\dabour\AppData\Local\Telerik.Sitefinity.SDK\Dependencies\Silverlight\Telerik.Windows.Controls.Navigation.dll</HintPath>
+    <Reference Include="Telerik.Windows.Controls.Navigation">
+      <HintPath>..\SitefinityWebApp\packages\Telerik.Sitefinity.SDK.Silverlight.2013.1.403.1050\lib\Telerik.Windows.Controls.Navigation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +106,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
@@ -121,4 +124,5 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
 </Project>
