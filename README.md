@@ -16,6 +16,8 @@ Using the Book widget sample, you can:
 
 ### Requirements
 
+* Sitefinity license
+
 * .NET Framework 4
 
 * Visual Studio 2012
@@ -37,7 +39,7 @@ The project refers to the following NuGet packages:
 
 *	Telerik.Sitefinity.Core.nupkg
 
-*	OpenAccess.Core.nupkg
+*	DataAccess.Core.nupkg
 
 **BookSilverlight** library
 
