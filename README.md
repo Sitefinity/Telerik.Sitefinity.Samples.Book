@@ -1,6 +1,8 @@
 Telerik.Sitefinity.Samples.Book
 ===============================
 
+[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.Book.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.Book.CI/)
+
 The Book widget is a Silverlight-based widget that displays all images uploaded in a selected album of Sitefinity Images library. The sample features a widget created with RadBook, part of RadControls for Silverlight suite that is delivered with the Sitefinity SDK.
 
 You use RadBook to create a native Sitefinity widget. 
@@ -39,7 +41,7 @@ The project refers to the following NuGet packages:
 
 *	Telerik.Sitefinity.Core.nupkg
 
-*	DataAccess.Core.nupkg
+*	Telerik.DataAccess.Core.nupkg
 
 **BookSilverlight** library
 
@@ -55,9 +57,9 @@ The project refers to the following NuGet packages:
 
 *	Telerik.Sitefinity.Content.nupkg
 
-*	OpenAccess.Core.nupkg
+*	Telerik.DataAccess.Core.nupkg
 
-You can find the packages in the official [Sitefinity Nuget Server](http://nuget.sitefinity.com).
+You can find the packages in the official [Sitefinity NuGet Server](http://nuget.sitefinity.com).
 
 
 ### Login
