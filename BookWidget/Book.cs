@@ -5,10 +5,10 @@ using System.ComponentModel;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using Telerik.Sitefinity;
 using Telerik.Sitefinity.Modules.Pages.Web.UI;
 using Telerik.Sitefinity.Web.UI;
-using System.Web.UI.HtmlControls;
 
 namespace BookWidget
 {
@@ -290,7 +290,7 @@ namespace BookWidget
             var images = App.WorkWith().Images().Publihed();
 
             // get images from album if set
-            if(!string.IsNullOrEmpty(title))
+            if (!string.IsNullOrEmpty(title))
                 images.Where((w) => w.Parent.Title == title);
 
             var filteredImages = images.OrderBy((w) => w.Ordinal).Get();

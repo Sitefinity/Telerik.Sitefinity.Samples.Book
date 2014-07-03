@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using BookWidget;
 using Telerik.Sitefinity;
+using Telerik.Sitefinity.Data.OA;
 using Telerik.Sitefinity.Samples.Common;
 using Telerik.Sitefinity.Services;
-using Telerik.Sitefinity.Data.OA;
 
 namespace SitefinityWebApp
 {
@@ -24,24 +24,20 @@ namespace SitefinityWebApp
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            Telerik.Sitefinity.Abstractions.Bootstrapper.Initializing += new EventHandler<Telerik.Sitefinity.Data.ExecutingEventArgs>(Bootstrapper_Initializing);
-            Telerik.Sitefinity.Abstractions.Bootstrapper.Initialized += new EventHandler<Telerik.Sitefinity.Data.ExecutedEventArgs>(Bootstrapper_Initialized);
+            Telerik.Sitefinity.Abstractions.Bootstrapper.Initializing += new EventHandler<Telerik.Sitefinity.Data.ExecutingEventArgs>(this.Bootstrapper_Initializing);
+            SystemManager.ApplicationStart += this.SystemManager_ApplicationStart;
+        }
+
+        private void SystemManager_ApplicationStart(object sender, EventArgs e)
+        {
+            SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(this.CreateSample);
+            SystemManager.RunWithElevatedPrivilege(worker);
         }
 
         protected void Bootstrapper_Initializing(object sender, Telerik.Sitefinity.Data.ExecutingEventArgs args)
         {
             if (args.CommandName == "RegisterRoutes")
             {
-
-            }
-        }
-
-        protected void Bootstrapper_Initialized(object sender, Telerik.Sitefinity.Data.ExecutedEventArgs args)
-        {
-            if (args.CommandName == "Bootstrapped")
-            {
-                SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSample);
-                SystemManager.RunWithElevatedPrivilege(worker);
             }
         }
 
@@ -70,32 +66,26 @@ namespace SitefinityWebApp
 
         protected void Session_Start(object sender, EventArgs e)
         {
-
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
-
         }
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
         {
-
         }
 
         protected void Application_Error(object sender, EventArgs e)
         {
-
         }
 
         protected void Session_End(object sender, EventArgs e)
         {
-
         }
 
         protected void Application_End(object sender, EventArgs e)
         {
-
         }
     }
 }
