@@ -18,10 +18,8 @@ Using the Book widget sample, you can:
 
 ### Requirements
 
-* Sitefinity 7.1 Beta license
+* Sitefinity license
  
-  **NOTE**: For more information about acquiring a Sitefinity Beta license, contact [sales@sitefinity.com](sales@sitefinity.com)
-
 * .NET Framework 4
 
 * Visual Studio 2012
