@@ -2,11 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using Telerik.Sitefinity;
+using Telerik.Sitefinity.GenericContent.Model;
+using Telerik.Sitefinity.Modules.Libraries;
 using Telerik.Sitefinity.Modules.Pages.Web.UI;
 using Telerik.Sitefinity.Web.UI;
 
@@ -286,14 +289,14 @@ namespace BookWidget
             List<Hashtable> results = new List<Hashtable>();
             var title = this.AlbumTitle;
 
-            // get IQueryable of images from the Fluent API.
-            var images = App.WorkWith().Images().Publihed();
+            // get IQueryable of images from the Standard API.
+            var images = LibrariesManager.GetManager().GetImages().Where(x => x.Status == ContentLifecycleStatus.Live);
 
             // get images from album if set
             if (!string.IsNullOrEmpty(title))
                 images.Where((w) => w.Parent.Title == title);
 
-            var filteredImages = images.OrderBy((w) => w.Ordinal).Get();
+            var filteredImages = images.OrderBy((w) => w.Ordinal);
 
             foreach (Telerik.Sitefinity.Libraries.Model.Image v in filteredImages)
             {
