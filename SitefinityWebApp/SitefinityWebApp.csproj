@@ -604,9 +604,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Sitefinity\Configuration\DataConfig.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="App_Data\Sitefinity\WebsiteTemplates\Samples\App_Themes\Samples\Global\main.css" />
     <Content Include="App_Data\Sitefinity\WebsiteTemplates\Samples\App_Themes\Samples\Images\logo.jpg" />
     <Content Include="ClientBin\BookSilverlight.xap" />
@@ -1503,6 +1500,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OpenAccessNuGet.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Sitefinity\Configuration\StartupConfig.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
