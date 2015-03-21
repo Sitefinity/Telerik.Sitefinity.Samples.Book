@@ -16,11 +16,8 @@ Using the Book widget sample, you can:
 ### Requirements
 
 * Sitefinity license
- 
 * .NET Framework 4
-
 * Visual Studio 2012
-
 * Microsoft SQL Server 2008R2 or later versions
 
 ### Nuget package restoration
@@ -47,8 +44,6 @@ To login to Sitefinity backend, use the following credentials:
 
 
 ### Additional resources
-
-[Developers Guide](http://www.sitefinity.com/documentation/documentationarticles/developers-guide)
 
 [Development: Use and extend Sitefinity functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)  
 [Tutorials: Create widgets](http://docs.sitefinity.com/tutorials-create-widgets)
