@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using BookWidget;
 using Telerik.Sitefinity;
+using Telerik.Sitefinity.Abstractions;
 using Telerik.Sitefinity.Data.OA;
 using Telerik.Sitefinity.Samples.Common;
 using Telerik.Sitefinity.Services;
-using Telerik.Sitefinity.Abstractions;
 
 namespace SitefinityWebApp
 {
@@ -25,7 +25,7 @@ namespace SitefinityWebApp
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            Bootstrapper.Initialized += Bootstrapper_Initialized;
+            Bootstrapper.Initialized += this.Bootstrapper_Initialized;
         }
 
         private void Bootstrapper_Initialized(object sender, Telerik.Sitefinity.Data.ExecutedEventArgs e)
