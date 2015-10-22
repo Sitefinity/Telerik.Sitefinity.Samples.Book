@@ -1,3 +1,5 @@
+###The bellow sample is deprecated. It's support ends with the Sitefinity 8.1 release and will no longer be updated.
+
 Telerik.Sitefinity.Samples.Book
 ===============================
 
