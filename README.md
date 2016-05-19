@@ -1,23 +1,23 @@
 ###The bellow sample is deprecated. It's support ends with the Sitefinity 8.1 release and will no longer be updated.
 
-Telerik.Sitefinity.Samples.Book
+Progress.Sitefinity.Samples.Book
 ===============================
 
 [![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.Book.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.Book.CI/)
 
-The Book widget is a Silverlight-based widget that displays all images uploaded in a selected album of Sitefinity Images library. The sample features a widget created with RadBook, part of RadControls for Silverlight suite that is delivered with the Sitefinity SDK.    
-You use RadBook to create a native Sitefinity widget.    
+The Book widget is a Silverlight-based widget that displays all images uploaded in a selected album of Sitefinity CMS Images library. The sample features a widget created with RadBook, part of RadControls for Silverlight suite that is delivered with the Sitefinity CMS SDK.    
+You use RadBook to create a native Sitefinity CMS widget.    
 You can run the Book widget sample with any type of license.   
 Using the Book widget sample, you can:
 
 * Create a RadBook widget
-* Register the widget in Sitefinity toolbox
+* Register the widget in Sitefinity CMS toolbox
 * Upload all images necessary for the widget to function to the Sitefinity Images Library
 
 
 ### Requirements
 
-* Sitefinity license
+* Sitefinity CMS license
 * .NET Framework 4.5
 * Visual Studio 2012
 * Microsoft SQL Server 2008R2 or later versions
@@ -40,12 +40,12 @@ For version-specific details about the required Sitefinity NuGet packages for th
 
 ### Login
 
-To login to Sitefinity backend, use the following credentials:  
+To login into the Sitefinity CMS backend, use the following credentials:  
 **Username:** admin  
 **Password:** password
 
 
 ### Additional resources
 
-[Development: Use and extend Sitefinity functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)  
+[Development: Use and extend Sitefinity CMS functionality](http://docs.sitefinity.com/develop-create-and-manage-website-content)  
 [Tutorials: Create widgets](http://docs.sitefinity.com/tutorials-create-widgets)
