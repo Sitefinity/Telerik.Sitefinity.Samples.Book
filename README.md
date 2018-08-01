@@ -5,8 +5,6 @@ Progress.Sitefinity.Samples.Book
 
 ### This repository is not automatically upgraded to latest Sitefintiy version. The repository is monitored for pull requests and fixes. The latest official version of Sitefinity that supports this sample is 8.1. Be aware that using a higher version could cause unexpected behavior. If you successfully upgrade the example to a greater version, please share your work with the community by submitting your changes via pull request.
 
-[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.Book.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.Book.CI/)
-
 The Book widget is a Silverlight-based widget that displays all images uploaded in a selected album of Sitefinity CMS Images library. The sample features a widget created with RadBook, part of RadControls for Silverlight suite that is delivered with the Sitefinity CMS SDK.    
 You use RadBook to create a native Sitefinity CMS widget.    
 You can run the Book widget sample with any type of license.   
